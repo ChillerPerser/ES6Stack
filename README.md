@@ -65,6 +65,11 @@ If you want to use another ENV (temp) use this: "NODE_ENV=production npm run bui
 
     Production:
     Runs "clean" and then "scripts", "sass:build" and "images" in parallel.
+### test
+    Testing is available through AVAjs. Using the "test" environment defined for babel.
+
+# Tests
+Tests are located under the "test" folder. Using AVAjs
 
 # Version
 To raise the Version use one of these:

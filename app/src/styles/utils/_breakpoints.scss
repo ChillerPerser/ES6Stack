@@ -1,0 +1,54 @@
+/**
+ * scheme: mx-breakpoint-[NAME]
+ *         mx-breakpoint-[NAME]-and-[UP/DOWN]
+ */
+
+/**
+ * Only large
+ */
+@mixin mx-breakpoint-large() {
+
+    @media screen and (min-width: $config-breakpoint-large-min) {
+        @content;
+    }
+}
+
+/**
+ * Only medium
+ */
+@mixin mx-breakpoint-medium() {
+
+    @media screen and (min-width: $config-breakpoint-medium-min) and (max-width: $config-breakpoint-medium-max) {
+        @content;
+    }
+}
+
+/**
+ * Medium AND up
+ */
+@mixin mx-breakpoint-medium-and-up() {
+
+    @media screen and (min-width: $config-breakpoint-medium-min) {
+        @content;
+    }
+}
+
+/**
+ * Medium AND down
+ */
+@mixin mx-breakpoint-medium-and-down() {
+
+    @media screen and (max-width: $config-breakpoint-medium-max) {
+        @content;
+    }
+}
+
+/**
+ * Only small
+ */
+@mixin mx-breakpoint-small() {
+
+    @media screen and (max-width: $config-breakpoint-small-max) {
+        @content;
+    }
+}

@@ -1,0 +1,30 @@
+input:not([type="checkbox"]),
+input:not([type="radio"]),
+select {
+
+    // all inputs BUT NOT checkbox and radio
+
+    &.error {
+
+    }
+}
+
+fieldset {
+
+    legend {
+
+    }
+}
+
+.checkbox,
+.radio {
+
+}
+
+.checkbox {
+
+}
+
+.radio {
+
+}

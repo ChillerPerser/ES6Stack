@@ -1,0 +1,43 @@
+/**
+ *  contains global styles, such as resets, typography, colors, etc.
+ */
+
+@import 'reset';
+@import 'typography';
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body,
+.page {
+    margin: 0;
+    min-height: 100%;
+    padding: 0;
+}
+
+a {
+    color: $color-link;
+    text-decoration: underline;
+
+    &:hover {
+        color: $color-link-hover;
+    }
+
+    &.active,
+    &:active {
+        color: $color-link-active;
+    }
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+    width: auto;
+}

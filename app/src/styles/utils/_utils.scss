@@ -1,0 +1,24 @@
+/**
+ * contains global mixins, functions, helper selectors, etc.
+ */
+
+@import 'mixins';
+@import 'breakpoints';
+
+/**
+ * for a scroll without lag (mostly because position: fixed) in mobile browsers (mostly iPad)
+ * improve with overflow-(x/y) if axis is known
+ */
+@mixin fix-mobile-scroll-lag() {
+    -webkit-overflow-scrolling: touch;
+    /*
+    overflow-x: hidden;
+    overflow-y: scroll;
+    */
+}
+
+@mixin clearfix() {
+    clear: both;
+    content: '';
+    display: block;
+}

@@ -1,0 +1,17 @@
+.btn {
+    appearance: none;
+    display: inline-block;
+
+    &.btn-block {
+        display: block;
+    }
+
+    &.btn-primary {
+
+    }
+
+    &.btn-danger,
+    &.btn-error {
+
+    }
+}

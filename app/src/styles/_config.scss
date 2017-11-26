@@ -1,0 +1,16 @@
+/**
+ * Grid
+ */
+$config-grid-width: 1230px; // 1200 plus the gutter
+$config-grid-gutter: 30px;
+$config-grid-columns: 12;
+
+/**
+ * Breakpoints
+ */
+$config-breakpoint-large-min: 1024px;
+
+$config-breakpoint-medium-max: 1023px;
+$config-breakpoint-medium-min: 768px;
+
+$config-breakpoint-small-max: 767px;

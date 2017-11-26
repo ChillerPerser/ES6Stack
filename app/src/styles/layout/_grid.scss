@@ -1,0 +1,65 @@
+.container {
+    margin: 0 auto;
+    max-width: $config-grid-width;
+    padding-left: ($config-grid-gutter / 2);
+    padding-right: ($config-grid-gutter / 2);
+    width: 100%;
+
+    &:after {
+        @include clearfix();
+    }
+}
+
+.row {
+    clear: both;
+    margin-left: -($config-grid-gutter / 2);
+    margin-right: -($config-grid-gutter / 2);
+
+    &:after {
+        @include clearfix();
+    }
+}
+
+[class*='col-'] {
+    float: left;
+    min-height: 1px;
+    padding-left: ($config-grid-gutter / 2);
+    padding-right: ($config-grid-gutter / 2);
+    width: 100%;
+}
+
+/**
+ * columns for the small breakpoint and up
+ */
+@for $i from 1 through $config-grid-columns {
+
+    .col-sm-#{$i} {
+        width: ((100 / 12) * $i)#{'%'};
+    }
+}
+
+/**
+ * columns for the medium breakpoint and up
+ */
+@media (min-width: $config-breakpoint-medium-min) {
+
+    @for $i from 1 through $config-grid-columns {
+
+        .col-md-#{$i} {
+            width: ((100 / 12) * $i)#{'%'};
+        }
+    }
+}
+
+/**
+ * columns for the large breakpoint and up
+ */
+@media (min-width: $config-breakpoint-large-min) {
+
+    @for $i from 1 through $config-grid-columns {
+
+        .col-lg-#{$i} {
+            width: ((100 / 12) * $i)#{'%'};
+        }
+    }
+}

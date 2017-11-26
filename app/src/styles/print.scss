@@ -1,0 +1,18 @@
+@import 'config';
+@import 'colors';
+
+@media print {
+
+    @page {
+        margin: 5mm;
+        padding: 0;
+        size: A4;
+    }
+
+    html,
+    body {
+        height: 297mm;
+        width: 210mm;
+    }
+
+}

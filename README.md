@@ -1,14 +1,30 @@
 # Frontend
-Using npm scripts to compile SASS and Rollup.js with some plugins (e.g. babel and uglify) to minify scripts files.
+Using npm scripts to compile SASS and Rollup.js, with some plugins (e.g. babel and uglify), to minify scripts files. Development server and styleguide are included.
+
+Features
+- Supports ES6
+- Supports SASS
+- Minifies css, image and js files
+- LiveReload Server
+- Styleguide included
+- Preconfigured
+    - AVAjs - Tests
+    - editorconfig
+    - SASS-Lint
+    - ESLint
+
 
 # Install
 - Requires Node.js
 - Use "yarn" or "npm" to install the packages from the "package.json"
 
-# ESLint and SASS-Lint
+# Config-Files
 These config files should be used by your editor.
 - .eslintrc -> ESLint
 - .sass-lint.yml -> SASS-Lint
+- .editorconfig -> Setup for your editor
+- dev-server.js -> LiveServer configuration
+- styleguide/config.txt -> Configuration for the devbridge styleguide
 
 # Rollup.js
 "-c" stands for "use the config file" (rollup.config.js).
@@ -67,9 +83,22 @@ If you want to use another ENV (temp) use this: "NODE_ENV=production npm run bui
     Runs "clean" and then "scripts", "sass:build" and "images" in parallel.
 ### test
     Testing is available through AVAjs. Using the "test" environment defined for babel.
+### server
+    Runs the "dev-server.js" file. Starts a small server ("live-server").
+### styleguide
+    Starts the styleguide server.
 
 # Tests
 Tests are located under the "test" folder. Using AVAjs
+
+# Server
+This package uses "live-server". Configuration can be found in the "dev-server.js" file.
+
+# Styleguide
+Uses the styleguide tool from devbridge.
+Start the styleguide server with "npm run styleguide". Be sure to start the live-server ("npm run server"), too.
+
+Visit http://127.0.0.1:8080/styleguide/
 
 # Version
 To raise the Version use one of these:

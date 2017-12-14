@@ -1,0 +1,34 @@
+[
+  {
+    "name": "theme",
+    "colors": {
+      "#FFF": [
+        "$color-white",
+        "$color-link"
+      ],
+      "#FF0000": [
+        "$color-link-active"
+      ],
+      "#000": [
+        "$color-black",
+        "$color-link-hover"
+      ]
+    },
+    "typography": [
+      {
+        "variable": "$font-default",
+        "value": "Helvetica, Arial, sans-serif",
+        "weights": [
+          {
+            "weight": 400,
+            "italic": false
+          },
+          {
+            "weight": 700,
+            "italic": false
+          }
+        ]
+      }
+    ]
+  }
+]

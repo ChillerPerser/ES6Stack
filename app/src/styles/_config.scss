@@ -14,3 +14,11 @@ $config-breakpoint-medium-max: 1023px;
 $config-breakpoint-medium-min: 768px;
 
 $config-breakpoint-small-max: 767px;
+
+/**
+ * Font configuration
+ */
+
+//-- typo:start --//
+$font-default: Helvetica, Arial, sans-serif; // 400, 700
+//-- typo:end --//

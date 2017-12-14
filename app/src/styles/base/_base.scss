@@ -15,6 +15,11 @@ html {
     height: 100%;
 }
 
+body {
+    font-family: $font-default;
+    font-size: 16px;
+}
+
 body,
 .page {
     margin: 0;
